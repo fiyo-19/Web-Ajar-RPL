@@ -1,0 +1,15 @@
+1. Senin, 29/08/22
+- membuat tampilan homepage slide 1
+2. Selasa, 30/08/22
+- selesai implementasi ui beranda
+3. Rabu, 31/08/22
+- selesai membuat pilihan mapel & tentang kami
+4. Jumat, 09/09/22
+- selesai linked page, link hover, dropdown kuis
+- linked ke pilihan mapel
+- hover per pilihan mapel
+
+
+
+kurang :
+all done

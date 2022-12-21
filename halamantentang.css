@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Lato-Semibold';
+	src: url(font/Lato-Semibold.ttf);
+}
+
+@font-face{
+	font-family: 'Lato-Bold';
+	src: url(font/Lato-Bold.ttf);
+}
+
+body{
+	background-image: url(pattern.svg);
+	height: 100%;
+	margin: auto;	
+}
+
+/*==================CONTENT=======================*/
+
+.tentang{
+	height: 700px;
+	width: 100%;
+	/*background-color: lightgreen;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-tentang{
+	height: 500px;
+	width: 90%;
+	/*background-color: lightblue;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+
+.tentang-title{
+	height: 50px;
+	margin-top: 20px;
+	width: 90%;
+	/*border: 1px solid black;*/
+}
+
+.tentang-title h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: #A8F2FE;
+	font-family: 'Lato-Bold';
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6{
+	height: 380px;
+	width: 300px;
+	/*border: 1px solid black;*/
+	margin: 10px;
+	border-radius: 40px;
+	background-color: #787AC3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*.foto1:hover{
+	background-color: #413A84;
+}*/
+
+.foto1 img, .foto2 img, .foto3 img{
+	/*border: 1px solid black;*/
+	width: 280px;
+	margin-top: 5px;
+	height: 260px;
+	border-radius: 30px;
+}
+
+.foto1 a, .foto2 a, .foto3 a{
+	/*border: 1px solid white;*/
+	border-radius: 30px;
+}
+
+.foto1 h1, .foto2 h1, .foto3 h1{
+	/*border: 1px solid black;*/
+	color: #A8F2FE;
+	font-size: 25px;
+	font-family: 'Lato-Bold';
+}
+
+.foto1 h2, .foto2 h2, .foto3 h2{
+	/*border: 1px solid black;*/
+	color: white;
+	width: 90%;
+	display: flex;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-family: 'Lato-Bold';
+}
+
+.foto1 p, .foto2 p, .foto3 p{
+	/*border: 1px solid black;*/
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Lato-Semibold';
+}
+

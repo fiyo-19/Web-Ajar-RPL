@@ -1,0 +1,382 @@
+html{
+	margin: 0 0 0 0;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url(font/Lato-Bold.ttf);
+}
+
+nav a{
+	font-family: 'Lato-Bold';
+}
+
+nav{
+	height: 80px;
+	width: 100%;
+	/*border: 2px solid yellow;*/
+	border-bottom: 1px solid white;
+	position: absolute;
+	background-color: #4D448B;
+	/*box-shadow: 0 0px 0px rgba(0,0,0,0.3), 0 0px 10px rgba(0,0,0,0.1) inset; */
+}
+
+.logohome a{
+	top: 8px;
+	margin-left: 30px;
+	position: relative;
+	width: 80px;
+	background-color: #4D448B;
+}
+
+.logohome2 a{
+	top: 8px;
+	margin-left: 20px;
+	position: relative;
+	width: 80px;
+	background-color: #4D448B;
+}
+
+label img{
+	width: 60px;
+}
+
+.logotext{
+	position: relative;
+	top: -50px;
+	margin-left: 200px;
+	color: white;
+}
+
+.logotext h2{
+	font-family: 'Lato-Bold';
+}
+
+.logotext p{
+	font-family: 'Lato-Semibold';
+}
+
+nav li{
+	display: inline-block;
+	margin: 0 30px;
+	line-height: 40px;
+	position: relative;
+}
+
+.link .animate::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 1px;
+	background: #4682B4;
+	transition: .5s ease-out;
+}
+
+.link .animate:hover::after{
+	left: 0;
+	width: 100%;
+}
+
+nav ul{
+	border: px solid black;
+	float: right;
+	position: relative;
+	top: -95px;
+	}
+
+nav li{
+	display: inline-block;
+	margin: 0 30px;
+	line-height: 50px;
+	position: relative;
+	}
+
+nav .link a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	text-decoration: none;
+	}
+
+.dropdown{
+	display: none;
+	/*0*/
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	z-index: 10;
+	box-shadow: 0 0px 0px rgba(0,0,0,0.3), 0 0px 10px rgba(0,0,0,0.1) inset; 
+}
+
+nav ul li:hover .dropdown{
+	display: block;
+	position: absolute;
+	left: -30px;
+	top: 100%;
+	width: 100px;
+	height: 180px;
+	background-color: #4D448B;
+	/*border: 1px solid red;*/
+}
+
+.dropdown ul li{
+	top: 100px;
+	left: 20px;
+	width: 80px;
+	margin-bottom: 5px;
+	/*border: 1px solid brown;*/
+	background-color: #574AAF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 0px 0px rgba(0,0,0,0.3), 0 0px 10px rgba(0,0,0,0.1) inset; 
+}
+
+.dropdown ul li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #A8F2FE;
+	width: 100%;
+}
+
+.dropdown ul li:hover{
+	background-color: #A8F2FE;
+}
+
+.dropdown ul li a:hover{
+	color: black;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+
+/*========================================== NAVBAR =================================*/
+
+/*========================================== RWD =================================*/
+
+/*@media screen and (min-width: 1440px)
+{
+	nav #icon{ display: none;}
+	nav{
+		width: 1440px;
+	}
+
+	.majority{ width: 100%;}
+}
+
+
+
+@media screen and (max-width: 1440px)
+{
+	nav #icon{ display: none;}
+
+	.image img{ top: -0px;}
+
+	.majority{ width: 70%;}
+}
+
+@media screen and (max-width: 1396px)
+{
+	.image img{ top: -53px;}
+}
+
+@media screen and (max-width: 1200px)
+{
+	nav #icon{ display: none;}
+
+	.image img{ top: -53px;}
+
+	.majority{ width: 80%;}
+}
+
+@media screen and (max-width: 910px)
+{
+	nav li{ margin: 0 10px;}
+
+	nav .link a{ font-size: 16px;}
+
+	nav #icon{ display: none;}
+
+	.image img{ top: -53px;}
+
+	.plus1, .plus2, .plus3, .plus4{ width: 250px;}
+}
+
+@media screen and (max-width: 768px)
+{
+	.logotext h2{ font-size: 24px;}
+
+	.logotext p{ font-size: 16px;}
+
+	.logotext{ margin-left: 17vw;}
+
+	nav #icon{ display: none;}
+
+	.image img{ top: -53px;}
+
+	.majority{ width: 80%;}
+
+	.plus1, .plus2, .plus3, .plus4{ width: 250px;}
+}
+
+@media screen and (max-width: 750px)
+{
+
+	nav #icon{
+		display: block;
+		position: relative;
+		top: -110px;
+		left: 10px;
+
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2f3640;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all.5s
+	}
+	nav li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav a{ font-size: 20px;}
+
+	.link a.active,.link a:hover{
+		border: none;
+		color: #3498db;
+	}
+	nav ul.show{ left: 0;}
+
+	.image img{ top: 0px;}
+
+	.about h3{ font-size: 17px;}
+
+	.about p{
+		font-size: 14px;
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 425px)
+{
+	.logotext h2{ font-size: 22px;}
+
+	.logotext p{ font-size: 16px;}
+
+	.logotext{ margin-left: 110px;}
+
+	.about p{
+		font-size: 11.5px;
+		padding: 0 15px;
+	}
+
+	.image{ width: 100%;}
+
+	.about-text{
+	height: 120px;
+	width: 80%;
+	top: -100px;
+	}
+	.image img{ top: -85px;}
+
+	.about h3{margin-top: 5px;}
+
+	.about p{ margin-top: 0px;}
+
+	.majority img{ width: 50px;}
+}
+
+@media screen and (max-width: 375px)
+{
+
+	.logotext h2{ font-size: 22px;}
+
+	.logotext p{ font-size: 16px;}
+
+	.logotext{
+		margin-left: 110px;
+		top: -50px;
+	}
+	.logohome img{ width: 80px;}
+
+	.about p{
+		font-size: 11.5px;
+		padding: 0 10px;
+	}
+
+	.majority img{
+	
+	left: 40%;
+	}
+
+	.majority img{ width: 40px;}
+}
+
+@media screen and (max-width: 320px)
+{
+	.logotext h2{ font-size: 18px;}
+
+	.logotext p{ font-size: 12px;}
+
+	.logotext{
+		margin-left: 80px;
+		top: -35px;
+	}
+	.logohome img{
+		width: 60px;
+		margin-top: 5px;
+	}
+
+	nav #icon{
+		top: -95px;
+		left: 10px;
+	}
+
+	.majority p{
+		font-size: 13px;
+		padding: 0 5px;
+	}
+
+	.about-text{
+	height: 130px;
+	width: 90%;
+	}
+
+
+}
+
+@media screen and (max-width: 280px)
+{
+	.logotext h2{ font-size: 18px;}
+
+	.logotext p{ font-size: 12px;}
+
+	.logotext{
+		margin-left: 80px;
+		top: -38px;
+	}
+	.logohome img{
+		width: 60px;
+		margin-top: 10px;
+	}
+	.about p{ font-size: 9px;}
+
+}
+
+@media screen and (max-width: 260px)
+{
+	nav{ display: none;}
+
+	section{  display: none;}
+}
+*/

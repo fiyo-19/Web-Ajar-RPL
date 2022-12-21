@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Lato-Semibold';
+	src: url(font/Lato-Semibold.ttf);
+}
+
+@font-face{
+	font-family: 'Lato-Bold';
+	src: url(font/Lato-Bold.ttf);
+}
+
+body{
+	background-image: url(pattern.svg);
+	height: 100%;
+	margin: auto;
+	margin-top: 00px;
+}
+
+/*==============CONTENT==========================*/
+
+.dump{
+	height: 80px;
+	width: 100%;
+	background-color: #4D448B;
+	border: px solid white;
+}
+
+.bab1rpl{
+	min-height: 70%;
+	width: 100%;
+	/*background-color: khaki;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.babrpl{
+	min-height: 70%;
+	width: 95%;
+	/*background-color: lightgreen;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+#back-button{
+	/*display: flex;*/
+}
+
+.back-button{
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid red;*/
+	margin-right: 10px;
+}
+
+.back-button a img{
+	width: 35px;
+	/*border: 1px solid black;*/
+	height: 30px;
+	border-radius: 20px;
+	margin-top: 5px;
+	transition: 0.3s ease-in-out;
+}
+
+.back-button a{
+	border-radius: 50px;
+	height: 30px;
+	/*border: 1px solid yellow;*/
+}
+.back-button img:hover{
+	transform: scale(1.2) ;
+}
+
+
+.bab{
+	height: 95%;
+	width: 90%;
+	border: 2px solid #A8F2FE;
+	background-color: #787AC3;
+	box-shadow: 0 0px 0px rgba(0,0,0,0.3), 0 0px 10px rgba(0,0,0,0.1) inset; 
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.bab h1{
+	/*border: 1px solid black;*/
+	width: 93%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+	font-family: 'Lato-Bold';
+	margin-top: 10px;
+	color: #A8F2FE;
+}
+
+.bab h3{
+	/*border: 1px solid black;*/
+	margin-top: 20px;
+	width: 100%;
+	height: 30px;
+	padding: 5px 0px 0px 5px;
+	font-size: 24px;
+	font-family: 'Lato-Bold';
+	color: white;
+}
+
+.bab h4{
+	/*border: 1px solid black;*/
+	width: 95%;
+	height: 30px;
+	padding: 5px 0px 30px 5px;
+	font-size: 19px;
+	font-family: 'Lato-Bold';
+	color: white;
+}
+.bab p{
+	/*border: 1px solid black;*/
+	width: 95%;
+	font-size: 20px;
+	padding: 5px 0px 20px 5px;
+	font-family: 'Lato-Semibold';
+	color: white;
+}
+
+.bab img{
+	margin-top: 50px;
+		
+}
+
+.listbab li{
+	/*border: 1px solid black;*/
+	width: 100%;
+	font-size: 18px;
+	padding: 5px 0px 10px 5px;
+	font-family: 'Lato-Semibold';
+	color: white;
+}
+
+.blanktes{
+	margin: 10px 0px 10px 0px;
+	width: 95%;
+	height: 200px;
+	background-color: khaki;
+}
+
+.scrollOnTop{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 10px 15px;
+	background-color: #787AC3;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+	display: none;
+	z-index: 5;
+}
+
+.scrollOnTop:hover{
+	background-color: white;
+	color: #4D448B;
+}
+
+
+.quiz-button p{
+	padding: 5px 0px 0px 0px;
+	font-size: 30px;
+	font-family: 'Lato-Semibold';
+}
+
+.quiz-button button{
+	/*border: 1px solid red;*/
+	height: 50px;
+	width: 300px;
+	border-radius: 50px;
+	background-color: #574AAF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.quiz-button button a{
+	height: 48px;
+	width: 300px;
+	border-radius: 50px;
+}
+
+.quiz-button button a:hover{
+	background-color: #787AC3;	
+}
+
+.quiz-button button a p:hover{
+	color: #A8F2FE;
+}
+
+
+#babflowchart{
+	/*background-color: */
+}
+
+#imgflowchart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color:#787AC3; 
+}
+
+#imgflowchart img{
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+#ornamen1{
+	position: absolute;
+	width: 800px;
+	left: -200px;
+	top: 100px;
+	/*border: 1px solid white;*/
+	z-index: -10;
+}
+
+#ornamen2{
+	position: absolute;
+	width: 500px;
+	left: 840px;
+	top: 100px;
+	/*border: 1px solid white;*/
+	z-index: -10;
+}
+
+#ornamen3{
+	position: absolute;
+	width: 500px;
+	left: -200px;
+	top: 700px;
+	/*border: 1px solid white;*/
+	z-index: -10;
+}
+
+#ornamen4{
+	position: absolute;
+	width: 500px;
+	left: 840px;
+	top: 500px;
+	/*border: 1px solid white;*/
+	z-index: -10;
+}
